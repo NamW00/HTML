@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>레드향 주문하기</title>
-</head>
-<body>
-  <h1>레드향 주문하기</h1>
-  <form action="">
-    <fieldset>
-      <legend>상품 선택</legend>
-      
-    </fieldset>
-    <fieldset>
-      <legend>배송 정보</legend>
-      
-    </fieldset>      
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>레드향 주문하기</title>
+  </head>
+  <body>
+    <h1>레드향 주문하기</h1>
+    <form action="">
+      <fieldset>
+        <legend>상품선택</legend>
+        <p><b>주문할 상품을 선택해 주세요</b></p>
+        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+        <label><input type="checkbox" value="f_3">가정용 3kg</label>
+        <label><input type="checkbox" value="f_5">가정용 5kg</label>
+        <p><b>포장 선택</b></p>
+        <label><input type="radio" name="gift" value="yes">선물 포장</label>
+        <label><input type="radio" name="gift" value="no">선물 포장 안함</label>
+        <ul>
+          <li>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <input type="number" min="0" max="5">개(최대 5개)
+          </li>
+          <li>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <input type="range" min="0" max="5">개(최대 5개)
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송정보</legend>
+        <label>주문상품 <input type="text" value="선물용 3kg" readonly></label>
+        <br>
+        <label for="user_id">아이디(6자이상):</label>
+        <input type="text" id="user_id" autofocus size="5" required>
+        <label for="user_pw" >비밀번호:</label>
+        <input type="password" id="user_pw" size="5" required>
+        <input type="image" src="images/login.png" alt="로그인">
+        <ul>
+          <li>
+            <label for="user_name">이름:</label>
+            <input type="text" id="user_name">
+          </li>
+          <li>
+            <label for="addr">배송주소:</label>
+            <input type="text" id="addr">          
+          </li>
+          <li>
+            <label for="mail">이메일 주소:</label>
+            <input type="email" id="mail">              
+          </li>
+          <li>
+            <label for="phone">연락처:</label>
+            <input type="tel" id="phone" placeholder="하이폰(-)없이" required>            
+          </li>
+        </ul>
+        <input type="time">
+        <input type="datetime-local">
+        <br>
+        <textarea id="memo" cols="40" rows="4"></textarea>
+        <br>
+        <select id="prod">
+          <option value="s1">상품1</option>
+          <option value="s2" selected>상품2</option>
+          <option value="s3">상품3</option>
+          <option value="s4">상품4</option>
+        </select>
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+      </div>
+    </form>
+  </body>
 </html>

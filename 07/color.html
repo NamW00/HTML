@@ -5,13 +5,16 @@
   <title>상품 소개 페이지</title>
   <style>
     h1 { 
-      color:#0000ff;   /* 16진수 표기법 */
+      color:#00f;   /* 16진수 표기법 */
+      /*ffffff(6자리)에서 중복되는 것은 fff(3자리)로 표현한다*/
+      color: rgb(0, 0, 255, 0.5); 
+      /* rgb 표기법((0~256)) */
     } 
     p {
       color:green;  /* 색상 이름 */
     }
     .accent {
-      color:hsl(0, 100%, 50%);  /* hsl 표기법 */
+      color:hsl(0, 100%, 50%);  /* hsl 표기법(R,G,B의 각 %) */
       font-weight:bold;
     }
   </style>
