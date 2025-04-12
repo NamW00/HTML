@@ -8,12 +8,13 @@
       #wrapper{
         width:700px;
         display:grid;
-        grid-template-columns:repeat(3, 1fr);
-        grid-template-rows:repeat(3, 100px);
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows:repeat(4, 100px);
         grid-template-areas: 
-          "box1 box1 box1"
-          "box2 box3 box3"
-          "box2 . box4";
+          "box1 box1 box1 box6"
+          "box2 box3 box3 box6"
+          "box2 . box4 box6"
+          "box5 box5 box5 box5";
       }
       .box{
         padding:15px;
@@ -37,6 +38,14 @@
         background-color:#ffd000;
         grid-area:box4;
       }
+      .box5 {
+        background-color:#ae75e3;
+        grid-area:box5;
+      }
+      .box6 {
+        background-color:#38c4c9;
+        grid-area:box6;
+      }
     </style>
   </head>
   <body>
@@ -45,6 +54,9 @@
       <div class="box box2">box2</div> 
       <div class="box box3">box3</div>
       <div class="box box4">box4</div>
+      <div class="box box5">box5</div>
+      <div class="box box6">box6</div>
+
     </div>
   </body>
   </html>
