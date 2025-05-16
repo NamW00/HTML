@@ -30,6 +30,15 @@
     <p><span class="accent" id="result"></span>일 연속으로 <br> 책 읽기를 달성했군요.</p>
     <p>축하합니다!</p>
   </div>  
+  <script>
+    var now = new Date("2025-04-16");
+    var firstDay = new Date("2024-09-27");
+    var toNow = now.getTime();
+    var toFirst=firstDay.getTime();
+    var passedTime=toNow-toFirst;
+    passedTime/=(60*60*24*1000);
+    document.querySelector('#result').innerText=passedTime;
+  </script>
 
 </body>
 </html>

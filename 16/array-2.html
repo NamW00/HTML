@@ -13,11 +13,34 @@
 <body>
   <h1>배열의 각 요소 </h1>
 	<script>
-    var numbers = ["one", "two", "three", "four"];
+    var char = ["one", "two", "three", "four"];
+	var num = [1,2,3];
 
-    for(i = 0; i < numbers.length; i++) {
-      document.write("<p>" + numbers[i] + "</p>");
-    }
+	var res1=num.concat(char);
+	var res2=char.concat(num);
+	document.write("<p>" + res1 + "</p>");
+	document.write("<p>" + res2 + "</p>");
+	var string1 = num.join('/');
+	document.write("<p>" + string1 + "<p>");
+	
+	var res3=num.push(4,100);
+	document.write("<p>" + res3 + "<p>");
+	document.write("<p>" + num + "<p>");
+	
+	var res4=num.unshift(-1,-2);
+	document.write("<p>" + res4 + "<p>");
+	document.write("<p>" + num + "<p>");
+	
+	var res5=num.pop();
+	document.write("<p>" + res5 + "<p>");
+	document.write("<p>" + num + "<p>");
+	
+	var res6=num.shift();
+	document.write("<p>" + res6 + "<p>");
+	document.write("<p>" + num + "<p>");
+	
+
+
 	</script>
 </body>
 </html>

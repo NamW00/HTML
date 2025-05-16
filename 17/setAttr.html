@@ -51,15 +51,15 @@
 	<script>
 		var cup = document.querySelector("#cup");
     var smallPics = document.querySelectorAll(".small");
-      
     for(let i = 0; i < smallPics.length; i++) {
-      smallPics[i].addEventListener("click", changePic);
+		smallPics[i].addEventListener("click", changePic);
     }
 
     function changePic() {
-      var newPic = this.src;
-      cup.setAttribute("src", newPic);
+		var newPic = this.src;
+		cup.setAttribute("src", newPic);
     }			
 	</script>
+
 </body>
 </html>
